@@ -25,6 +25,7 @@ Version: 1.0
 
 ## Running the program
 usage: < outfile> <enc_key filename> <dec_key filename>
+
 *output files are written in binary, use (.bin) extension*
 
 ##  About the program
