@@ -7,7 +7,7 @@ Version: 1.0
 
 ## Included files
 - hillcipher_main.c
-    - Functions for creating encyrption key and computing decyrption key
+    - Functions for creating encryption key and computing decryption key
 - hillcipher_main.h
     - Header file to use functions from "hillcipher_main.c"
 - hillcipher_main.c
@@ -36,9 +36,8 @@ usage: < outfile> <enc_key filename> <dec_key filename>
     + Row Multiplication
     + Row swap
     + Row addition 
-3.  All compuations are reduced (mod 26) for language [A-Z]
+3.  All computations are reduced (mod 26) for language [A-Z]
     + [MODULUS] macro in "hillcipher_key.c" can be modified as needed
-4.  Generates new encryption keys untill finding one that is invertable
-5.  Upon finding valid keypair, each key is written to the filename arguments
+4.  Generates new encryption keys until finding one that is invertible (mod 26)
+5.  Upon finding valid keypair, each key is written to the specified filenames
 6.  The keys can be read back in for use and/or display to the console
-
